@@ -1,0 +1,14 @@
+Olá professor, para compilar o programa usei o comando Make no TERMINAL enquanto no diretório principal(no caso "buscas"), é pra funcionar direto no linux, mas 
+caso esteja no windows utilize um dos seguintes comandos:
+
+g++ src/Sublista.cc src/Nodulo.cc src/Menu.cc src/ListaPrincipal.cc src/Main.cc -Iincl -o main.exe
+
+ou
+
+g++ src/*.cc -Iincl -o main.exe
+
+como os headers (.hh) nao estao na mesma pasta que o source, é preciso informar o diretorio de inclusao
+por isso a flag ( -I"pasta dos headers" ), nesse caso -Iincl
+
+O arquivo executável será gerado na mesma pasta, então basta executar.
+Caso tenha problemas com a compilação pode entrar em contato comigo pelo email andre.medeiros@sou.unifal-mg.edu.br
